@@ -29,10 +29,17 @@ function cart(state = [], action) {
   }
 }
 
-function cartFilters(state = "SHOW_ALL", action) {
+function cartPurchaseFilters(state = "SHOW_ALL", action) {
   switch (action.type) {
     case SET_PURCHASED_FILTER:
       return action.data;
+    default:
+      return state;
+  }
+}
+
+function cartCategoryFilters(state = "SHOW_ALL", action) {
+  switch (action.type) {
     case SET_CATEGORY_FILTER:
       return action.data;
     default:
@@ -40,12 +47,19 @@ function cartFilters(state = "SHOW_ALL", action) {
   }
 }
 
-function cartSort(state = "FILO", action) {
+function cartNameSort(state = "ASIS", action) {
   switch (action.type) {
     case SORT_NAME:
-      return "NAME_" + action.data;
+      return action.data;
+    default:
+      return state;
+  }
+}
+
+function cartDescriptionSort(state = "ASIS", action) {
+  switch (action.type) {
     case SORT_DESCRIPTION:
-      return "DESCRIPTION_" + action.data;
+      return action.data;
     default:
       return state;
   }
@@ -53,6 +67,8 @@ function cartSort(state = "FILO", action) {
 
 export const cartApp = combineReducers({
   cart,
-  cartFilters,
-  cartSort
+  cartPurchaseFilters,
+  cartCategoryFilters,
+  cartNameSort,
+  cartDescriptionSort
 });
