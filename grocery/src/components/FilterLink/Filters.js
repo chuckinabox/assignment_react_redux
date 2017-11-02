@@ -1,5 +1,5 @@
 import React from "react";
-import FilterLinkContainer from "../containers/FilterLinkContainer";
+import FilterLinkContainer from "../../containers/FilterLinkContainer";
 
 const Filters = () => (
   <div className="Filters">

@@ -1,8 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Input from "./elements/Input";
-import InputGroup from "./elements/InputGroup";
-import Button from "./elements/Button";
+import Input from "../elements/Input";
+import InputGroup from "../elements/InputGroup";
+import Button from "../elements/Button";
 
 const AddItem = ({ onSubmit }) => (
   <form className="container" onSubmit={onSubmit}>

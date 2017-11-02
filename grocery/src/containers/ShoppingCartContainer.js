@@ -1,5 +1,5 @@
 import { connect } from "react-redux";
-import ShoppingCart from "../components/ShoppingCart";
+import ShoppingCart from "../components/ShoppingCart/ShoppingCart";
 import { purchaseItem } from "../actions";
 
 const getCategoryItems = (cart, filter) => {

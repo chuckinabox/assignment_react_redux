@@ -1,7 +1,7 @@
 import { connect } from "react-redux";
 import serialize from "form-serialize";
 import { addItem } from "../actions";
-import AddItem from "../components/AddItem";
+import AddItem from "../components/AddItem/AddItem";
 
 const mapDispatchToProps = dispatch => {
   return {

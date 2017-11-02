@@ -1,5 +1,5 @@
 import React from "react";
-import SortLinkContainer from "../containers/SortLinkContainer";
+import SortLinkContainer from "../../containers/SortLinkContainer";
 
 const Sorts = () => (
   <div className="Sorts">

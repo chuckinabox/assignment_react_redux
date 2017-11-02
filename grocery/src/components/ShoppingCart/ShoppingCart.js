@@ -1,8 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 import ItemCard from "./ItemCard";
-import Filters from "./Filters";
-import Sorts from "./Sorts";
+import Filters from "../FilterLink/Filters";
+import Sorts from "../SortLink/Sorts";
 
 const ShoppingCart = ({ cart, purchaseItem }) => {
   console.log(cart);

@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Button from "./elements/Button";
+import Button from "../elements/Button";
 
 const ItemCard = ({ item, onClick }) => {
   const { name, description, purchased } = item;

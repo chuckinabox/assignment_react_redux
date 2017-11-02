@@ -1,5 +1,5 @@
 import { connect } from "react-redux";
-import SortLink from "../components/SortLink";
+import SortLink from "../components/SortLink/SortLink";
 import { sortName, sortDescription } from "../actions";
 
 const mapStateToProps = (state, ownProps) => {
