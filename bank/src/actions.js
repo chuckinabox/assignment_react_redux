@@ -3,9 +3,10 @@ export const VIEW_ACCOUNT = "VIEW_ACCOUNT";
 export const WITHDRAW = "WITHDRAW";
 export const DEPOSIT = "DEPOSIT";
 export const TRANSFER = "TRANSFER";
+export const ADD_TRANSACTION = "ADD_TRANSACTION";
 export const TRANSACTION_FILTER_DATE = "TRANSACTION_FILTER_DATE";
 
-let nextAccountId = 1000;
+let nextAccountId = 1003;
 export function addAccount(data) {
   return {
     type: CREATE_ACCOUNT,
@@ -19,7 +20,7 @@ export function addAccount(data) {
 export function viewAccount(id) {
   return {
     type: VIEW_ACCOUNT,
-    data: { id }
+    data: id
   };
 }
 
@@ -52,6 +53,17 @@ export function transfer(data) {
     }
   };
 }
+
+export function addTransaction(data) {
+  return {
+    type: ADD_TRANSACTION,
+    data: {
+      ...data,
+      date: new Date()
+    }
+  };
+}
+
 export function setTransactionFilter(data) {
   return {
     type: TRANSACTION_FILTER_DATE,

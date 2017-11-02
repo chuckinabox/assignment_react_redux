@@ -18,6 +18,10 @@ const bankStart = [
   {
     id: 1001,
     balance: 800
+  },
+  {
+    id: 1002,
+    balance: 1000
   }
 ];
 
