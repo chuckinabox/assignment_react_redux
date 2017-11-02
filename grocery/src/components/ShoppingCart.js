@@ -7,11 +7,7 @@ import Sorts from "./Sorts";
 const ShoppingCart = ({ cart, purchaseItem }) => {
   console.log(cart);
   const shoppingCart = cart.map(item => (
-    <ItemCard
-      item={item}
-      key={item.id}
-      onPurchaseClick={() => purchaseItem(item.id)}
-    />
+    <ItemCard item={item} key={item.id} onClick={() => purchaseItem(item.id)} />
   ));
   const emptyCart = <p className="text-muted">Empty Cart</p>;
 
@@ -20,6 +16,7 @@ const ShoppingCart = ({ cart, purchaseItem }) => {
       <h2>Your Cart</h2>
       <Filters />
       <Sorts />
+      <br />
       <div className="card-deck">
         {cart.length > 0 ? shoppingCart : emptyCart}
       </div>

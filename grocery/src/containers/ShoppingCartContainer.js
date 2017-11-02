@@ -8,6 +8,8 @@ const getCategoryItems = (cart, filter) => {
       return cart;
     case "SHOW_DAIRY":
       return cart.filter(cart => cart.category === "Dairy");
+    case "SHOW_BREAD":
+      return cart.filter(cart => cart.category === "Bread");
     default:
       return cart;
   }
@@ -63,6 +65,7 @@ const sortByDescription = (cart, filter) => {
 };
 
 const mapStateToProps = state => {
+  console.log(state);
   let newCart = state.cart;
   newCart = getCategoryItems(newCart, state.cartCategoryFilters);
   newCart = getPurchasedItems(newCart, state.cartPurchaseFilters);

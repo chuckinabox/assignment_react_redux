@@ -10,6 +10,9 @@ const Filters = () => (
     <FilterLinkContainer field="Category" filter="SHOW_DAIRY">
       Show Dairy
     </FilterLinkContainer>
+    <FilterLinkContainer field="Category" filter="SHOW_BREAD">
+      Show Bread
+    </FilterLinkContainer>
     <br />
     By Avaliablitly:{" "}
     <FilterLinkContainer field="Purchase" filter="SHOW_ALL">

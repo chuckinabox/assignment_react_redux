@@ -6,7 +6,7 @@ export const SET_CATEGORY_FILTER = "SET_CATEGORY_FILTER";
 export const SORT_NAME = "SORT_NAME";
 export const SORT_DESCRIPTION = "SORT_DESCRIPTION";
 
-let nextItemId = 3;
+let nextItemId = 4;
 export function addItem(data) {
   return {
     type: ADD_ITEM,

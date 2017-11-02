@@ -26,6 +26,14 @@ const cartStart = [
     price: "2.50",
     purchased: false,
     id: 2
+  },
+  {
+    name: "Jerry's Economic",
+    description: "White Bread",
+    category: "Bread",
+    price: "0.99",
+    purchase: false,
+    id: 3
   }
 ];
 

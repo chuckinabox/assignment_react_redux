@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import Button from "./elements/Button";
 
-const ItemCard = ({ item, onPurchaseClick }) => {
+const ItemCard = ({ item, onClick }) => {
   const { name, description, purchased } = item;
 
   return (
@@ -14,7 +14,7 @@ const ItemCard = ({ item, onPurchaseClick }) => {
       {purchased ? (
         <p className="text-muted">Sold</p>
       ) : (
-        <Button color="primary" onClick={onPurchaseClick}>
+        <Button color="primary" onClick={onClick}>
           Buy Now
         </Button>
       )}
@@ -24,7 +24,7 @@ const ItemCard = ({ item, onPurchaseClick }) => {
 
 ItemCard.propTypes = {
   item: PropTypes.object.isRequired,
-  onPurchaseClick: PropTypes.func.isRequired
+  onClick: PropTypes.func.isRequired
 };
 
 export default ItemCard;
